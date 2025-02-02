@@ -34,7 +34,7 @@ const ProtectedRoute = ({ children }) => {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    
       <Routes>
         {/* Public routes - no authentication needed */}
         <Route index path='/' element={<Login/>}/>
@@ -100,6 +100,6 @@ export default function App() {
           </ProtectedRoute>
         }/>
       </Routes>
-    </BrowserRouter>
+    
   );
 }
