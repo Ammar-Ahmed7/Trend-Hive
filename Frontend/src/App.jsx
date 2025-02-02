@@ -37,7 +37,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* Public routes - no authentication needed */}
-        <Route index path='/' element={<Dashboard/>}/>
+        <Route index path='/' element={<Login/>}/>
         <Route path='/Clogin' element={<CSigningIn/>}/>
         <Route path='/CSignup' element={<CSigningUp/>}/>
         <Route path='/Alogin' element={<ASigningIn/>}/>
@@ -45,59 +45,59 @@ export default function App() {
 
         {/* Protected routes - need authentication */}
         <Route path='/dashboard' element={
-          <ProtectedRoute>
+          
             <Dashboard />
-          </ProtectedRoute>
+          
         }/>
         <Route path='/aboutus' element={
-          <ProtectedRoute>
+          
             <AboutPage/>
-          </ProtectedRoute>
+          
         }/>
         <Route path='/deliveryoptimization' element={
-          <ProtectedRoute>
+          
             <DeliveryOptimization />
-          </ProtectedRoute>
+          
         }/>
         <Route path='/communitysharing' element={
-          <ProtectedRoute>
+          
             <CommunitySharing />
-          </ProtectedRoute>
+          
         }/>
         <Route path='/marketplace' element={
-          <ProtectedRoute>
+          
             <MarketPlace />
-          </ProtectedRoute>
+          
         }/>
         <Route path='/serviceoverview' element={
-          <ProtectedRoute>
+          
             <ServiceOverview />
-          </ProtectedRoute>
+          
         }/>
         <Route path='/admin' element={
-          <ProtectedRoute>
+          
             <Admin/>
-          </ProtectedRoute>
+          
         }/>
         <Route path='/inventory' element={
-          <ProtectedRoute>
+          
             <InventoryManagement/>
-          </ProtectedRoute>
+          
         }/>
         <Route path='/order' element={
-          <ProtectedRoute>
+          
             <OrderManagement/>
-          </ProtectedRoute>
+          
         }/>
         <Route path='/payment' element={
-          <ProtectedRoute>
+          
             <PaymentManagement/>
-          </ProtectedRoute>
+          
         }/>
         <Route path='/product' element={
-          <ProtectedRoute>
+          
             <ProductManagement/>
-          </ProtectedRoute>
+          
         }/>
       </Routes>
     </BrowserRouter>
