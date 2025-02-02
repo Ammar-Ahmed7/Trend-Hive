@@ -23,7 +23,7 @@ const ProtectedRoute = ({ children }) => {
   return (
     <>
       <SignedIn>
-        {children}
+        {children} 
       </SignedIn>
       <SignedOut>
         <Navigate to="/" replace />
