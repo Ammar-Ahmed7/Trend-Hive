@@ -37,7 +37,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* Public routes - no authentication needed */}
-        <Route index path='/' element={<Login/>}/>
+        <Route index path='/' element={<Dashboard/>}/>
         <Route path='/Clogin' element={<CSigningIn/>}/>
         <Route path='/CSignup' element={<CSigningUp/>}/>
         <Route path='/Alogin' element={<ASigningIn/>}/>
